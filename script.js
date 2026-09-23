@@ -19,7 +19,7 @@ function updateRequest() {
   status.textContent = '';
 
   if (monthly) {
-    const message = "Hi! I'd like the GX-6750 monthly unlimited plan ($20/month). I understand each use requires 24-hour notice and a $10 refundable deposit. How do I get started?";
+    const message = "Hi! I'd like the GX-6750 monthly unlimited plan ($20/month). I understand each use requires 24-hour notice, and the monthly plan has a $30 refundable deposit. How do I get started?";
     textLink.href = `sms:+16696891368?body=${encodeURIComponent(message)}`;
     return;
   }

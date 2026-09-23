@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e43a19">
+  <meta name="description" content="Rent a GX-6750 typewriter for class. $5 per use or $20 per month.">
+  <title>RENT MY TYPEWRITER — GX-6750</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top">RENT MY TYPEWRITER<span>®</span></a>
+    <a class="header-link" href="#request">REQUEST IT ↗</a>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GX-6750 / AVAILABLE TO RENT</p>
+        <h1>TYPE<br>IT <em>OUT.</em></h1>
+        <p class="lede">A real typewriter for English class, in-class essays, and whatever else deserves paper.</p>
+        <a class="hero-link" href="#request">GET TYPING <span>↗</span></a>
+      </div>
+      <div class="hero-art"><img src="assets/gx-6750-hero.png" alt="Cream colored electric typewriter against a red backdrop"></div>
+    </section>
+    <section class="booking" id="request">
+      <div class="pricing">
+        <p class="eyebrow">THE DEAL</p>
+        <h2>RENT<br>THE<br>THING.</h2>
+        <div class="rate"><div><strong>$5</strong><span>/ USE</span></div><p>+$50 refundable deposit</p></div>
+        <div class="rate"><div><strong>$20</strong><span>/ MONTH</span></div><p>Unlimited uses. 24-hour notice and $10 refundable deposit per use</p></div>
+        <p class="deposit-note">Deposits cover damage found after use and are returned if there’s no damage.</p>
+      </div>
+      <div class="request-panel">
+        <p class="eyebrow">BOOK A SLOT ↗</p>
+        <label for="plan">PLAN</label>
+        <select id="plan"><option value="single">One use — $5</option><option value="monthly">Monthly — $20</option></select>
+        <div id="single-fields">
+          <label for="rental-date">DATE</label>
+          <input id="rental-date" type="date" required>
+          <label for="period">CLASS PERIOD</label>
+          <select id="period" required><option value="" selected disabled>Choose a period</option><option value="first period">First period</option><option value="second period">Second period</option><option value="third period">Third period</option><option value="fourth period">Fourth period</option></select>
+        </div>
+        <div id="monthly-notice" class="monthly-notice" hidden>
+          <strong>MONTHLY USE</strong>
+          <p>Text me at least 24 hours before each use with the date and class period you need. There’s a $10 refundable deposit per use.</p>
+        </div>
+        <a id="text-request" class="request-button" href="sms:+16696891368">TEXT RENTAL REQUEST <span>↗</span></a>
+        <p id="request-status" class="request-status" role="status" aria-live="polite"></p>
+        <div class="contact-links"><a href="https://www.instagram.com/thatxliner/" target="_blank" rel="noopener noreferrer">IG @THATXLINER ↗</a><a href="tel:+16696891368">669 689 1368 ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
